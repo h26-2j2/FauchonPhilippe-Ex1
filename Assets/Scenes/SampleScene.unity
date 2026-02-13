@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 19095224}
   - component: {fileID: 19095227}
   - component: {fileID: 19095226}
-  - component: {fileID: 19095225}
+  - component: {fileID: 19095228}
   m_Layer: 0
   m_Name: Meteorite 5
   m_TagString: Untagged
@@ -147,26 +147,12 @@ Transform:
   m_GameObject: {fileID: 19095223}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.88, y: 5.79, z: 0}
+  m_LocalPosition: {x: -7.94, y: -24.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &19095225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19095223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteorite
-  vitesseY: 0.05
-  tauxReduction: 0.01
 --- !u!114 &19095226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +224,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &19095228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19095223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4e7cc519686ed4babcd14bc1577aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteHaut
+  tauxReduction: 0.05
+  vitesseRotation: 0.5
+  positionXMin: -12
+  positionXMax: 12
+  vitesseYMax: 0.1
+  vitesseYMin: 0.01
 --- !u!1 &21675592
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +270,7 @@ Transform:
   m_GameObject: {fileID: 21675592}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.57, y: -1.2, z: 0}
+  m_LocalPosition: {x: -12.21, y: -1.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -354,9 +358,13 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteorite
-  vitesseY: 0.05
-  tauxReduction: 0.01
+  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteBas
+  tauxReduction: 0.05
+  vitesseRotation: 0.5
+  positionXMin: -12
+  positionXMax: 12
+  vitesseYMax: 0.1
+  vitesseYMin: 0.01
 --- !u!1 &49209579
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +486,7 @@ GameObject:
   - component: {fileID: 473955214}
   - component: {fileID: 473955217}
   - component: {fileID: 473955216}
-  - component: {fileID: 473955215}
+  - component: {fileID: 473955218}
   m_Layer: 0
   m_Name: Meteorite 2
   m_TagString: Untagged
@@ -495,26 +503,12 @@ Transform:
   m_GameObject: {fileID: 473955213}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.53, y: 6.02, z: 0}
+  m_LocalPosition: {x: -2.23, y: -1.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &473955215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473955213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteorite
-  vitesseY: 0.05
-  tauxReduction: 0.01
 --- !u!114 &473955216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +580,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &473955218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473955213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteBas
+  tauxReduction: 0.05
+  vitesseRotation: 0.5
+  positionXMin: -12
+  positionXMax: 12
+  vitesseYMax: 0.1
+  vitesseYMin: 0.01
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +679,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.113296546, g: 0.2021816, b: 0.3584906, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -723,6 +735,124 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &527703523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 527703524}
+  - component: {fileID: 527703527}
+  - component: {fileID: 527703526}
+  - component: {fileID: 527703525}
+  m_Layer: 0
+  m_Name: Star-destroyer-5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &527703524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527703523}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.58106387, w: 0.813858}
+  m_LocalPosition: {x: 2.2099998, y: -20.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1121871389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -71.051}
+--- !u!114 &527703525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527703523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3461d6d3bb9ba1a438ab830cd77bc758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationStarDestroyer
+  vitesseRotation: 0.05
+--- !u!114 &527703526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527703523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca9e5bd9a27cda40a8be421e4df0fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectionProximiteJoueur
+--- !u!212 &527703527
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527703523}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -8249231962416399744, guid: bcbe6d8512bdd2348923fe01bfe96c63, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.7, y: 4.14}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,13 +964,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707151110}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -16.2, y: -13.03, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.946253, w: 0.32342735}
+  m_LocalPosition: {x: -16.16, y: -10.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -142.259}
 --- !u!212 &707151112
 SpriteRenderer:
   serializedVersion: 2
@@ -957,12 +1087,15 @@ Transform:
   - {fileID: 707151111}
   - {fileID: 1148966701}
   - {fileID: 1682498245}
+  - {fileID: 1198224040}
+  - {fileID: 527703524}
+  - {fileID: 1973042008}
+  - {fileID: 1834522599}
   - {fileID: 21675593}
   - {fileID: 473955214}
   - {fileID: 1544936911}
   - {fileID: 1707131240}
   - {fileID: 19095224}
-  - {fileID: 1465054983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1148966700
@@ -992,13 +1125,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148966700}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -2.2, y: -7.08, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7868971, w: -0.6170842}
+  m_LocalPosition: {x: -5.63, y: -6.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -256.207}
 --- !u!212 &1148966702
 SpriteRenderer:
   serializedVersion: 2
@@ -1083,7 +1216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotationStarDestroyer
   vitesseRotation: 0.05
---- !u!1 &1465054982
+--- !u!1 &1198224039
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1091,66 +1224,65 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1465054983}
-  - component: {fileID: 1465054986}
-  - component: {fileID: 1465054985}
-  - component: {fileID: 1465054984}
+  - component: {fileID: 1198224040}
+  - component: {fileID: 1198224043}
+  - component: {fileID: 1198224042}
+  - component: {fileID: 1198224041}
   m_Layer: 0
-  m_Name: Meteorite 6
+  m_Name: Star-destroyer-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1465054983
+--- !u!4 &1198224040
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465054982}
+  m_GameObject: {fileID: 1198224039}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.84, y: 12.86, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.8671079, w: 0.49812034}
+  m_LocalPosition: {x: 3.74, y: -6.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1465054984
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -120.249}
+--- !u!114 &1198224041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465054982}
+  m_GameObject: {fileID: 1198224039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3461d6d3bb9ba1a438ab830cd77bc758, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteorite
-  vitesseY: 0.05
-  tauxReduction: 0.01
---- !u!114 &1465054985
+  m_EditorClassIdentifier: Assembly-CSharp::RotationStarDestroyer
+  vitesseRotation: 0.05
+--- !u!114 &1198224042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465054982}
+  m_GameObject: {fileID: 1198224039}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fca9e5bd9a27cda40a8be421e4df0fac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectionProximiteJoueur
---- !u!212 &1465054986
+--- !u!212 &1198224043
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465054982}
+  m_GameObject: {fileID: 1198224039}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1192,12 +1324,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1935582184597198243, guid: a53ddf3e37a0e1c42a2c6f37ff0b0bc6, type: 3}
+  m_Sprite: {fileID: -8249231962416399744, guid: bcbe6d8512bdd2348923fe01bfe96c63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.71, y: 1.69}
+  m_Size: {x: 1.7, y: 4.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1213,7 +1345,7 @@ GameObject:
   - component: {fileID: 1544936911}
   - component: {fileID: 1544936914}
   - component: {fileID: 1544936913}
-  - component: {fileID: 1544936912}
+  - component: {fileID: 1544936915}
   m_Layer: 0
   m_Name: Meteorite 3
   m_TagString: Untagged
@@ -1230,26 +1362,12 @@ Transform:
   m_GameObject: {fileID: 1544936910}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.51, y: 12.82, z: 0}
+  m_LocalPosition: {x: 7.82, y: -1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1544936912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544936910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteorite
-  vitesseY: 0.05
-  tauxReduction: 0.01
 --- !u!114 &1544936913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,6 +1439,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1544936915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544936910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteBas
+  tauxReduction: 0.05
+  vitesseRotation: 0.5
+  positionXMin: -12
+  positionXMax: 12
+  vitesseYMax: 0.1
+  vitesseYMin: 0.01
 --- !u!1 &1682498244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,13 +1484,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682498244}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -2.24, y: -18.96, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.9355105, w: 0.35329884}
+  m_LocalPosition: {x: -3.85, y: -13.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -138.622}
 --- !u!114 &1682498246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,7 +1690,7 @@ GameObject:
   - component: {fileID: 1707131240}
   - component: {fileID: 1707131243}
   - component: {fileID: 1707131242}
-  - component: {fileID: 1707131241}
+  - component: {fileID: 1707131244}
   m_Layer: 0
   m_Name: Meteorite 4
   m_TagString: Untagged
@@ -1571,26 +1707,12 @@ Transform:
   m_GameObject: {fileID: 1707131239}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: -1.16, z: 0}
+  m_LocalPosition: {x: 3.74, y: -23.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1121871389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1707131241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707131239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteorite
-  vitesseY: 0.05
-  tauxReduction: 0.01
 --- !u!114 &1707131242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,6 +1780,260 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.71, y: 1.69}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!114 &1707131244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707131239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4e7cc519686ed4babcd14bc1577aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteHaut
+  tauxReduction: 0.05
+  vitesseRotation: 0.5
+  positionXMin: -12
+  positionXMax: 12
+  vitesseYMax: 0.1
+  vitesseYMin: 0.01
+--- !u!1 &1834522598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1834522599}
+  - component: {fileID: 1834522602}
+  - component: {fileID: 1834522601}
+  - component: {fileID: 1834522600}
+  m_Layer: 0
+  m_Name: Star-destroyer-7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1834522599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834522598}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.9739934, w: -0.22657624}
+  m_LocalPosition: {x: -9.83, y: -19.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1121871389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -206.191}
+--- !u!114 &1834522600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834522598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3461d6d3bb9ba1a438ab830cd77bc758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationStarDestroyer
+  vitesseRotation: 0.05
+--- !u!114 &1834522601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834522598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca9e5bd9a27cda40a8be421e4df0fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectionProximiteJoueur
+--- !u!212 &1834522602
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834522598}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -8249231962416399744, guid: bcbe6d8512bdd2348923fe01bfe96c63, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.7, y: 4.14}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!1 &1973042007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973042008}
+  - component: {fileID: 1973042011}
+  - component: {fileID: 1973042010}
+  - component: {fileID: 1973042009}
+  m_Layer: 0
+  m_Name: Star-destroyer-6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1973042008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973042007}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.91425663, w: -0.40513548}
+  m_LocalPosition: {x: 7.7800007, y: -12.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1121871389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -227.799}
+--- !u!114 &1973042009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973042007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3461d6d3bb9ba1a438ab830cd77bc758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationStarDestroyer
+  vitesseRotation: 0.05
+--- !u!114 &1973042010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973042007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca9e5bd9a27cda40a8be421e4df0fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectionProximiteJoueur
+--- !u!212 &1973042011
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973042007}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -8249231962416399744, guid: bcbe6d8512bdd2348923fe01bfe96c63, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.7, y: 4.14}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -26,7 +26,7 @@ public class DetectionProximiteJoueur : MonoBehaviour
     void VerifierDistance()
     {
         float distanceAvecJoueur = Vector2.Distance(cible.transform.position, this.transform.position);
-        float distanceMinPourCollision = (this.transform.localScale.x / 2) + (cible.transform.localScale.x / 2);
+        float distanceMinPourCollision = this.transform.localScale.x + cible.transform.localScale.x;
 
         if (distanceAvecJoueur < distanceMinPourCollision)
         {

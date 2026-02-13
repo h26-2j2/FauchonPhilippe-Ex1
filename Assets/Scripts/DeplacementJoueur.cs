@@ -70,7 +70,7 @@ public class DeplacementJoueur : MonoBehaviour
 
         //Vérification de la collision avec la zone d'arrivée
         float distanceAvecZone = Vector2.Distance(zoneArrivee.transform.position, this.transform.position);
-        float distanceMinPourCollision = (this.transform.localScale.x / 2) + (zoneArrivee.transform.localScale.x / 2);
+        float distanceMinPourCollision = this.transform.localScale.x + zoneArrivee.transform.localScale.x;
 
         //Si la distance entre la zone d'arrivée et le joueur est plus petite que la largeur du joueur + la largeur de la zone (la moitié car le point de pivot est au centre du sprite)
         if (distanceAvecZone < distanceMinPourCollision)
