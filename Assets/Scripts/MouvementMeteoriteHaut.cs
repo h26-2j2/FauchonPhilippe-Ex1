@@ -23,6 +23,7 @@ public class MouvementMeteoriteHaut : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        /*Position aleatoire des meteorites au debut de la partie*/
         float positionXInitiale = Random.Range(positionXMin, positionXMax);
         // Debug.Log(positionXInitiale);
 
@@ -53,6 +54,7 @@ public class MouvementMeteoriteHaut : MonoBehaviour
         
         transform.localScale = new Vector2(nouvelleTaille, nouvelleTaille);
 
+        /*Faire tourner les meteorites sur elles-memes*/
         transform.Rotate(0, 0, vitesseRotation);
     }
 }

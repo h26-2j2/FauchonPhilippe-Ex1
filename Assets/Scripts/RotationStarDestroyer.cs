@@ -15,6 +15,7 @@ public class RotationStarDestroyer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*Rotation des star-destroyer*/
         transform.Rotate(0, 0, vitesseRotation);
     }
 }
