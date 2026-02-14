@@ -236,11 +236,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4e7cc519686ed4babcd14bc1577aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteHaut
-  tauxReduction: 0.05
+  tauxReduction: 0.01
   vitesseRotation: 0.5
   positionXMin: -12
   positionXMax: 12
-  vitesseYMax: 0.1
+  vitesseYMax: 0.05
   vitesseYMin: 0.01
 --- !u!1 &21675592
 GameObject:
@@ -359,11 +359,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteBas
-  tauxReduction: 0.05
+  tauxReduction: 0.01
   vitesseRotation: 0.5
   positionXMin: -12
   positionXMax: 12
-  vitesseYMax: 0.1
+  vitesseYMax: 0.05
   vitesseYMin: 0.01
 --- !u!1 &49209579
 GameObject:
@@ -592,11 +592,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteBas
-  tauxReduction: 0.05
+  tauxReduction: 0.01
   vitesseRotation: 0.5
   positionXMin: -12
   positionXMax: 12
-  vitesseYMax: 0.1
+  vitesseYMax: 0.05
   vitesseYMin: 0.01
 --- !u!1 &519420028
 GameObject:
@@ -1451,11 +1451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362fc9e37196d6449bf8f46845ba31d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteBas
-  tauxReduction: 0.05
+  tauxReduction: 0.01
   vitesseRotation: 0.5
   positionXMin: -12
   positionXMax: 12
-  vitesseYMax: 0.1
+  vitesseYMax: 0.05
   vitesseYMin: 0.01
 --- !u!1 &1682498244
 GameObject:
@@ -1796,11 +1796,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4e7cc519686ed4babcd14bc1577aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouvementMeteoriteHaut
-  tauxReduction: 0.05
+  tauxReduction: 0.01
   vitesseRotation: 0.5
   positionXMin: -12
   positionXMax: 12
-  vitesseYMax: 0.1
+  vitesseYMax: 0.05
   vitesseYMin: 0.01
 --- !u!1 &1834522598
 GameObject:
